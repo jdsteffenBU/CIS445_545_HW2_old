@@ -20,11 +20,11 @@
             font-family: monospace;
         }
         caption{
-            border: 1px solid;
+            border: 2px solid;
             border-collapse: collapse;
             background-color: rgb(95, 180, 255);
             text-align: center;
-            font-size: larger;
+            font-size: 20px;
         }
         th{
             border: 1px solid;
@@ -37,14 +37,22 @@
             border-collapse: collapse;
             background-color: aliceblue;
             text-align: left;
-            width: 200px;
+            --width: 200px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
         }
         td.a{
             border: 1px solid;
             border-collapse: collapse;
             background-color: aliceblue;
             text-align: left;
-            width: 300px;
+            --width: 400px;
+            padding-left: 5px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
         }
     </style>
 </head>
@@ -52,13 +60,12 @@
     <table style="width: auto;">
         <caption>My Profile</caption>
         <tr>
-            <th>Question</th>
-            <th>Answer</th>
+
         </tr>
 
         <tr>
-            <td class="q">Full Name</td>
-            <td class="a">John D Steffen III</td>
+            <td class="q" style="font-size: 18px;">Full Name</td>
+            <td class="a" style="font-size: 18px;">John D Steffen III</td>
         </tr>
         <tr>
             <td class="q">Student Number</td>
@@ -67,6 +74,22 @@
         <tr>
             <td class="q">Email Address</td>
             <td class="a">jdsteffen@fsmail.bradley.edu</td>
+        </tr>
+        <tr>
+            <td class="q">Level</td>
+            <td class="a">Graduate</td>
+        </tr>
+        <tr>
+            <td class="q">Major</td>
+            <td class="a">CIS with a concentration in Data Science</td>
+        </tr>
+        <tr>
+            <td class="q">Age</td>
+            <td class="a">42</td>
+        </tr>
+        <tr>
+            <td class="q">Hobbies</td>
+            <td class="a">Cars, Racing, Woodworking, Board Games, Video Games</td>
         </tr>
     </table>
 </body>
